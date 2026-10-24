@@ -1,0 +1,26 @@
+# For Tesseract-ing the files
+
+import os
+import fitz 
+from pdf2image import convert_from_path
+import pytesseract
+from tqdm import tqdm
+
+INPUT_FOLDER = "Finding_Letters"
+OUTPUT_FOLDER = "Text_Files"
+
+os.makedirs(OUTPUT_FOLDER, exist_ok=True)
+files = [f for f in os.listdir(INPUT_FOLDER) if f.endswith(".pdf")]
+
+for file in tqdm(files):
+    pdf_path = os.path.join(INPUT_FOLDER, file)
+    
+    images = convert_from_path(pdf_path, dpi=300)
+    
+    text = "\n".join(
+        pytesseract.image_to_string(img) for img in images
+    )
+
+    out_path = os.path.join(OUTPUT_FOLDER, file.replace(".pdf", ".txt"))
+    with open(out_path, "w", encoding="utf-8") as f:
+        f.write(text)
