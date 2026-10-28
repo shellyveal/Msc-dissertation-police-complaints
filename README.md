@@ -59,6 +59,8 @@ This dissertation demonstrates the feasibility of using open-source OCR and natu
 
 - **Potential disparities in complaint outcomes warrant further investigation.** Allegations of bias-based policing showed a negative association with sustained findings, raising questions about how the agency evaluates discrimination claims. References to complainants' mental health also exhibited a significant negative association in the regression models, although the small number of relevant cases makes this result particularly uncertain. These patterns are preliminary and worthy of further exploration.
 
+![CPOA outcomes over time with overlay for cases of APD non-concurrence](individual-figures/overall_outcomes_time.png)
+
 - **The public record leaves important questions about accountability unresolved.** Approximately 20.7% of observations included sustained findings, while 3.7% contained a recorded instance of APD nonconcurrence with recommended discipline. Nonconcurrence was concentrated in particular periods, reaching 54% of sustained cases in 2021. Sparse and inconsistent reporting of nonconcurrence limited the ability to assess how often disciplinary recommendations were ultimately modified.
 
 Overall, this research offers a methodological foundation for evaluating civilian oversight through free-text analysis. It also identifies potential weaknesses in the transparency, consistency, and impartiality of complaint review that merit further investigation.
